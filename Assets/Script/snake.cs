@@ -20,19 +20,19 @@ public class snake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && direcation != Vector2.down)
+        if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && direcation != Vector2.down)
         {
             direcation = Vector2.up;
         }
-        else if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) && direcation != Vector2.right)
+        else if((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && direcation != Vector2.right)
         {
             direcation = Vector2.left;
         }
-        else if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow) && direcation != Vector2.up)
+        else if((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) && direcation != Vector2.up)
         {
             direcation = Vector2.down;
         }
-        else if(Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow) && direcation != Vector2.left)
+        else if((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) && direcation != Vector2.left)
         {
             direcation = Vector2.right;
         }
